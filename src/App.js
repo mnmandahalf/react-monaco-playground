@@ -14,6 +14,19 @@ function App() {
           options={{}}
           onChange={()=>{}}
           editorDidMount={()=>{}}
+          overrideServices={{
+            storageService: {
+              get() {},
+              remove() {},
+              getBoolean(key) {
+                return true;
+              },
+              store() {},
+              onWillSaveState() {},
+              onDidChangeStorage() {},
+              onDidChangeValue() {}
+            }
+          }}
         />
       </div>
     </div>
