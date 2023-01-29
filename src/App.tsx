@@ -1,7 +1,8 @@
+import React from 'react';
 import './App.css';
 import MonacoEditor from 'react-monaco-editor';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <div className="App-main">
@@ -18,7 +19,7 @@ function App() {
             storageService: {
               get() {},
               remove() {},
-              getBoolean(key) {
+              getBoolean() {
                 return true;
               },
               store() {},
